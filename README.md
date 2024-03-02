@@ -39,7 +39,7 @@ The Fashion-MNIST dataset was preprocessed to facilitate effective model trainin
 - Hyperparameter Tuning with Cross-Validation: GridSearchCV was utilized to perform exhaustive hyperparameter tuning across a range of 'k' values on the training set. The cross-validation approach within GridSearchCV ensures that each hyperparameter setting is thoroughly evaluated on different subsets of the training set, mitigating the risk of overfitting and providing a robust estimate of the model's expected performance on unseen data.
 
 
-### Results
+## Results
 
 In the results, k=6 provided a balance between the accuracy for the training set and the generalization to the testing set, suggesting it as the optimal number of neighbors for this particular KNN implementation on the Fashion-MNIST dataset.
 
@@ -57,6 +57,6 @@ For this task, I created a new environment with the following versions:
 - Python 3.8
 - Matplotlib 3.6.2
 
-## License:
+## License
 The copyright for Fashion-MNIST is held by Zalando SE. Fashion-MNIST is licensed under the MIT license.
 
