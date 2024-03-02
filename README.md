@@ -36,9 +36,17 @@ The Fashion-MNIST dataset was preprocessed to facilitate effective model trainin
 - Sampling: To expedite computational time, a subset of the dataset was sampled for model training and validation.
 - Grid Search: A grid search was conducted to tune hyperparameters and validate the model's performance across different 'k' values.
 - Performance Metrics: The accuracy was calculated for both the training and testing sets to evaluate model generalizability.
+- Hyperparameter Tuning with Cross-Validation: GridSearchCV was utilized to perform exhaustive hyperparameter tuning across a range of 'k' values on the training set. The cross-validation approach within GridSearchCV ensures that each hyperparameter setting is thoroughly evaluated on different subsets of the training set, mitigating the risk of overfitting and providing a robust estimate of the model's expected performance on unseen data.
+
 
 ### Results
+
 In the results, k=6 provided a balance between the accuracy for the training set and the generalization to the testing set, suggesting it as the optimal number of neighbors for this particular KNN implementation on the Fashion-MNIST dataset.
+
+In addition to evaluating performance metrics, GridSearchCV was employed to systematically determine the best number of neighbors for our KNN model. This comprehensive hyperparameter tuning process involved cross-validation to ensure the robustness and reliability of our findings. The results from GridSearchCV corroborated our initial analysis, confirming that k = 6 indeed offers the most balanced performance. 
+
+
+
 
 ## Note
 For this task, I created a new environment with the following versions:
