@@ -40,6 +40,15 @@ The Fashion-MNIST dataset was preprocessed to facilitate effective model trainin
 ### Results
 In the results, k=6 provided a balance between the accuracy for the training set and the generalization to the testing set, suggesting it as the optimal number of neighbors for this particular KNN implementation on the Fashion-MNIST dataset.
 
-### License:
+## Note
+For this task, I created a new environment with the following versions:
+
+- Numpy 1.19.5
+- Tensorflow 2.3
+- Pandas 1.1.5
+- Python 3.8
+- Matplotlib 3.6.2
+
+## License:
 The copyright for Fashion-MNIST is held by Zalando SE. Fashion-MNIST is licensed under the MIT license.
 
