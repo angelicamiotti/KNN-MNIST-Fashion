@@ -1,7 +1,16 @@
 # KNN-MNIST-Fashion
 
 ## Introduction
+In this notebook, I aimed to examine the KNN algorithm and illustrate the importance of selecting the appropriate number of neighbors. To implement this method, I opted for the Fashion-MNIST image dataset. 
+
 Fashion-MNIST is an assortment of fashion product images designed to present a more complex challenge for machine learning classification than the original MNIST digit dataset. This dataset is a standard tool for training and testing various machine learning models.
+
+To demonstrate the importance of selecting the right number of neighbors, I initially explored model overfitting. Next, I decided to plot a graph illustrating how the accuracy varies on both the training and testing sets as a function of the number of neighbors. 
+This method demonstrates that when the number of neighbors is too small, the accuracy of the training set becomes excessively high, indicating that the algorithm is essentially memorizing the dataset. 
+Alternatively, when the number of neighbors is too large, the accuracy of both the training and testing sets begins to decline, suggesting that the model implemented by the algorithm is too simplistic or underfitted.
+This first method allowed for the identification of the optimal number of neighbors. 
+
+Additionally, I employed a second method involving hyperparameter tuning through GridSearchCV on the training set. This method provides the optimal number of neighbors by conducting a grid search using a 5-fold cross-validation, as specified with cv=5. Both methods led me to determine that the optimal number of neighbors is 6.
 
 ## Composition of the Dataset
 The MNIST Fashion dataset is composed of 70,000 images of fashion products from 10 categories with 7,000 images per category. The dataset is split into a training set of 60,000 images and a test set of 10,000 images. 
